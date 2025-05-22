@@ -238,13 +238,16 @@ div.font-black {
     border-radius: 0px;
     align-items: center;
   }
+  /*font size using vw*/
 
-  .and{
+  .army{
     background-color: white;
     color: black;
     border-radius: 0px;
     align-items: center;
-    height: 20px;
+    font-size:40px;
+    font-family: kode mono;
+    height: 40px;
   }
   
   .cloud {
