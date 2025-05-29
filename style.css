@@ -479,7 +479,7 @@ div.font-black {
     
 .right-align { 
   margin-left: auto;   
-  width: 40%;          
+  width:50vw;         
   padding-left: 10%;  
   padding-right: 10%;
   box-sizing: border-box; 
