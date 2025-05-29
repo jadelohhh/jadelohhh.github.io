@@ -1,6 +1,30 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Manjari:wght@100;400;700&display=swap');
 
+
+/*welcome splash page
+.welcome {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.welcome.visible {
+  display: flex;
+  flex-wrap: wrap;
+}
+*/
+
+
 body{
     background-color: #0A0E12;
     font-size: 18px;
@@ -9,6 +33,8 @@ body{
     color: #FFFFFF;
     align-items: center;
     font-family: manjari, sans-serif;
+      overflow-x: hidden;
+      position: relative;
 }
 
 img, video{
@@ -30,6 +56,10 @@ img, video{
 
 div.width50{
   width:50%;
+}
+
+div.widthh50{
+  width:50vw;
 }
 
 div.width33{
@@ -54,7 +84,9 @@ div.spacer{
 }
 
 .spacer3{
- padding:10%;
+  width:80%;
+ padding-right:10%;
+ padding-left: 10%;
 }
 
 .spacertop{
@@ -76,16 +108,26 @@ div.flex{
   display:flex;
   flex-wrap:wrap;
 }
-
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 p{
-    font-size: 20px;
+    font-size: 28px;
     font-family: "Manjari", sans-serif;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 110%;
     display: flex;
     justify-content: center;
+    word-wrap: break-word;
 }
+
+
+
+
+
 
 
 
@@ -105,6 +147,11 @@ div.bg-black {
   margin-top: 50px;
   margin-bottom: 100px;
   text-align: center;
+}
+
+.margin-sides{
+  margin-left:110px;
+  margin-right:110px;
 }
 
 .bg1 {
@@ -246,8 +293,19 @@ div.font-black {
     border-radius: 0px;
     align-items: center;
     font-size:40px;
-    font-family: kode mono;
+    font-weight: 600;
+    height: 30px;
+  }
+
+    .digital{
+    background-color: white;
+    color: black;
+    border-radius: 0px;
+    align-items: center;
+    font-size:40px;
+    font-weight: 600;
     height: 40px;
+    length:60px;
   }
   
   .cloud {
@@ -402,17 +460,31 @@ div.font-black {
 }
 
 .bigquote {
-  font-size: 60px;
-  line-height: 65px;
+  font-size: 85px;
+  line-height: 100%;
+  font-weight:600;
+  letter-spacing: -2px;
+  padding-bottom: 10px;;
   font-family: "Kode Mono", monospace;
   color: white;
   }
+
 
 .text-container {
   position: relative;
   display: flex;
   height: 100%;
   }
+
+    
+.right-align { 
+  margin-left: auto;   
+  width: 40%;          
+  padding-left: 10%;  
+  padding-right: 10%;
+  box-sizing: border-box; 
+}
+
 
   
   .containerright {
@@ -443,17 +515,7 @@ div.font-black {
     position: relative;
   }
   
-  .center-divider {
-    width: 60px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .vertical-lines {
-    display: flex;
-    gap: 15px;
-    height: 100%;
-  }
+
   
   .line {
     width: 1px;
@@ -587,12 +649,10 @@ div.font-black {
 
 /*pebble big quote*/
 .pebblequote {
-  min-width:40%;
-  max-width:40%;
-  line-height: 1.4;
-  padding-right: 30px;
   position: relative;
   z-index: 1;
+  text-transform: uppercase;
+  width:50%;
   
 }
 
@@ -607,7 +667,6 @@ div.font-black {
 .two-column2 {
   display: flex;
   align-items: flex-start; 
-  gap: 60px;
   max-width: 1400px;
   padding: 100px ; 
   z-index: 2;
@@ -685,6 +744,23 @@ div.font-black {
     position: relative;
     bottom: 0;
     font-size: x-small;
+  }
+
+  /*popups*/
+  div.popup{
+    position:fixed;
+    top:200px;
+    background: white;
+  }
+
+  div.hide{
+    display:none;
+  }
+
+  /*triggers and effects*/
+  body.update{
+    background-color: black;
+    color:#e9282b;
   }
 
   /* herovideo */
