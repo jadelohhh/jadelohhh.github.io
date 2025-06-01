@@ -2,7 +2,7 @@ const classChanges = [
   { time: 3, target: ".quote", add: "font-purple" },
   { time: 9, target: ".quote", remove: "hide" },
   { time: 9, target: ".page", add: "update" },
-  { time: 12, target: ".page", remove: "update" },
+  { time: 3, target: ".pillpopup", add: "pillpopup" },
 
 
   { time: 9, target: ".changeme2", add: "show" },
