@@ -84,6 +84,7 @@ div.width80 {
   padding-left: 5%;
 }
 
+
 div.flex {
   display: flex;
   flex-wrap: wrap;
@@ -121,6 +122,8 @@ div.bg-black {
   margin-bottom: 100px;
   text-align: center;
 }
+
+
 
 .bg1 {
   position: absolute;
@@ -285,6 +288,7 @@ div.font-darkgreen {
   background: linear-gradient(90deg, #B289EF, #E63739, #2CABA3);
 }
 
+
 /*third page algorithms on loose*/
 .loose-section {
   position: relative;
@@ -315,6 +319,7 @@ div.font-darkgreen {
 .loose-word {
   position: absolute;
   animation: pulse 2s infinite ease-in-out;
+  font-weight:300;
 }
 
 .loose-1 {
@@ -462,6 +467,12 @@ div.font-darkgreen {
   z-index: 1;
 }
 
+
+.blur-text-block {
+  position: relative;
+  margin-bottom: 3em;
+}
+
 /* 1st blurbox */
 .blur-rectangle1 {
   position: absolute;
@@ -593,7 +604,7 @@ div.font-darkgreen {
 }
 
 
-/*for army... section*/
+
 .leftalign {
   align-self: flex-start;
   margin-top: 100px;
@@ -606,6 +617,7 @@ div.font-darkgreen {
   margin-top: 370px;
   max-width: 550px;
 }
+
 
 .orblg {
   position:absolute;
@@ -690,8 +702,6 @@ div.font-darkgreen {
   bottom: 0;
 }
 
-
-
 /*popups*/
 div.popup {
   position: fixed;
@@ -707,7 +717,7 @@ div.hide {
 /*triggers and effects*/
 body.update {
   background-color: #0A0E12;
-  color: #efbaba;
+  color: #fdcfcf;
 }
 
 /* herovideo */
